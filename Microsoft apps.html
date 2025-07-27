@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Microsoft application Form</title>
+  <title>Graphic Design Form</title>
   <link rel="icon" href="chrome-effect-logo-mockup_1016288-85.jpg" />
   <style>
     * {
@@ -14,152 +14,115 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-        url(microsoft-icons-other-office-applications-web-site-montreal-canada-april-page-cloud-based-subscription-services-181580460.jpg) no-repeat center center/cover;
+       url(microsoft-icons-other-office-applications-web-site-montreal-canada-april-page-cloud-based-subscription-services-181580460.jpg) no-repeat center center/cover;
       display: flex;
       justify-content: center;
       align-items: center;
-      /* height: 100vh; */
+      min-height: 100vh;
+      padding: 20px;
     }
 
-    .firstdiv {
-      background-color:gray;
-      width: 90%;
-      margin-top: 100px;
+    .form-container {
+      background-color: rgba(128, 128, 128, 0.8);
+      width: 100%;
       max-width: 500px;
       padding: 2rem;
-      border-bottom-left-radius: 100px;
-      border-top-right-radius: 100px;
-      animation: moveUpDown 3s infinite ease-in-out;
-      box-shadow: 00.10px 10px 29px white;
+      border-bottom-left-radius: 80px;
+      border-top-right-radius: 80px;
+      box-shadow: 0 10px 25px blue;
+      animation: float 3s infinite ease-in-out;
     }
 
-    @keyframes moveUpDown {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-      100% {
-        transform: translateY(0);
-      }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
     }
 
-    .car {
-      height: 150px;
-      width: 150px;
+    .form-container img {
+      height: 130px;
+      width: 130px;
       border-radius: 50%;
       display: block;
       margin: 0 auto 1rem;
     }
 
-    .welcometxt {
+    h1 {
       color: white;
       text-align: center;
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
     }
 
-    .innerdiv {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .transparent,
-    .transparent1 {
+    input {
       width: 100%;
-      max-width: 300px;
-      padding: 10px;
-      margin: 0.4rem 0;
-      border: none;
+      padding: 12px;
+      margin: 8px 0;
       border-radius: 5px;
-    }
-
-    .btndiv {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .log
-    {
-      width: 140px;
-      height: 45px;
-      margin: 0.4rem;
-      border-radius: 10px;
-      margin-left: 150px;
       border: none;
-      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 16px;
+      border: none;
+      border-radius: 8px;
       background-color: black;
       color: white;
-      text-decoration: none;
-      transition: background-color 0.5s, color 0.5s;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.4s;
     }
 
-    .log:hover
-     {
+    button:hover {
       background-color: white;
       color: black;
     }
 
-    .log a
-    {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      width: 100%;
-      height: 100%;
-      line-height: 45px;
-    }
-
-    .btndiv p {
-      color: white;
-      margin: 1rem 0 0.5rem;
-    }
-
-    .btndiv a {
-      color: white;
-      text-decoration: underline;
-      font-size: 0.9rem;
-    }
-
     @media (max-width: 500px) {
-      .firstdiv {
-        padding: 1.5rem;
+      .form-container {
         border-bottom-left-radius: 50px;
         border-top-right-radius: 50px;
+        padding: 1.5rem;
       }
 
-      .car {
-        height: 120px;
-        width: 120px;
-      }
-
-      .log,
-      .sign {
-        width: 100%;
-        max-width: 250px;
-      }
-
-      .transparent,
-      .transparent1 {
-        max-width: 100%;
+      .form-container img {
+        height: 100px;
+        width: 100px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="firstdiv">
-    <img class="car" src="chrome-effect-logo-mockup_1016288-85.jpg" alt="logo" />
-    <h1 class="welcometxt">WELCOME, PLS ENTER THE FOLLOWING INFORMATION</h1>
-    <div class="innerdiv">
-      <input class="transparent" type="text" placeholder="First Name" />
-      <input class="transparent1" type="text" placeholder="Last Name" />
-      <input class="transparent1" type="" placeholder="How many times a week for" />
-      <input class="transparent1" type="tel" placeholder="Phone Number" />
-    </div>
-   <button class="log">Submit</button>
+  <div class="form-container">
+    <img src="chrome-effect-logo-mockup_1016288-85.jpg" alt="logo">
+    <h1>WELCOME, PLEASE ENTER YOUR INFORMATION</h1>
+    <form id="whatsappForm">
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <input type="text" id="lastName" placeholder="Last Name" required />
+      <input type="text" id="timesPerWeek" placeholder="How many times a week?" required />
+      <input type="tel" id="phoneNumber" placeholder="Your Phone Number" required />
+      <button type="submit">Submit</button>
+    </form>
   </div>
+
+  <script>
+    document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
+      const times = document.getElementById("timesPerWeek").value.trim();
+      const phone = document.getElementById("phoneNumber").value.trim();
+
+      const message = `Hello, my name is ${firstName} ${lastName}. I want to register for Graphic Design classes ${times} times a week. My phone number is ${phone}.`;
+      const encodedMessage = encodeURIComponent(message);
+
+      // Replace 2348034407044 with your full international WhatsApp number (Nigeria = 234)
+      window.location.href = `https://wa.me/2348034407044?text=${encodedMessage}`;
+    });
+  </script>
 </body>
 </html>
