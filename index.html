@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DEVIS DEV ONLINE Programs 💻</title>
+  <link rel="icon" href="chrome-effect-logo-mockup_1016288-85.jpg" />
+  <link rel="stylesheet" href="devis dev college.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" data-aos="fade-down">
+    <div class="logo">
+      <img src="chrome-effect-logo-mockup_1016288-85.jpg" alt="Logo" />
+      <h1 class="nav-title">Devis Dev Programs</h1>
+    </div>
+  
+    <!-- Menu Icon (only shows on mobile/tablet) -->
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+  
+    <ul class="nav-links">
+      <li id="home" class="nav-item"><a href="#home" class="Home"><p class="size1">Home</p></a></li>
+      <li class="nav-item">
+        <a href="#courses" class="Home"><p class="size">Courses</p></a>
+        <div class="dropdown">
+          <p class="rtxt">Data Analysis</p>
+          <p class="rtxt">HTML & CSS</p>
+          <p class="rtxt">Microsoft Apps</p>
+          <p class="rtxt">Graphic Design</p>
+          <p class="rtxt">UI/UX Design</p>
+          <p class="rtxt">Presentation Package</p>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#about" class="Home"><p class="size">About us</p></a></li>
+      <li class="nav-item"><a href="#contact" class="Home"><p class="size">Contact</p></a></li>
+      <li class="nav-item"><a href="DEVIS FAQ.HTML" class="Home"><p class="size">FAQ</p></a></li> 
+    </ul>
+  </nav>
+  
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="toggleSidebar()">×</div>
+    <a href="#home">Home</a>
+    <a href="#offer">Courses</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+    <a href="DEVIS FAQ.HTML">FAQ</a>
+  </div>
+  
+
+  <!-- Hero Section -->
+  <section class="sbs1" data-aos="fade-in">
+    <img class="sbslogo2" src="sbs-logo2.png" alt="Logo 2" />
+    <h1 class="empower">Empowering young individuals <br>with the knowledge of technology</h1>
+    <button class="Apply"><a href="#offer"><p>Apply now</p></a></button>
+  </section>
+
+  <!-- Welcome -->
+  <section class="sbs2" data-aos="fade-up">
+    <p class="welcome">WELCOME TO DEVIS DEV COLLEGE</p>
+    <h1 class="grow">Grow your future with us</h1>
+    <img class="homeimg" src="ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="Journey Image" data-aos="fade-up"/>
+  </section>
+
+  <!-- Offerings Section -->
+  <p id="offer" class="ptag" data-aos="fade-up">We Offer</p>
+  <div class="offers-container">
+    <div class="offerdiv1" data-aos="slide-up">
+      <img class="image1" src="web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546.jpg" alt="Web Dev"/>
+      <p class="offerp">Web Development</p>
+      <button class="checkout"><a href="web dev application form.html">Check out</a></button>
+    </div>
+    <div class="offerdiv1" data-aos="slide-left">
+      <img class="image1" src="graphic-design-concept-different-categories-web-logo-stationary-product-company-identity-branding-91904106.jpg" alt="Design"/>
+      <p class="offerp">Graphic Design</p>
+      <button class="checkout"><a href="graphic design app form.html"><p>Check out</p></a></button>
+    </div>
+    <div class="offerdiv1" data-aos="slide-right">
+      <img class="image1" src="microsoft-icons-other-office-applications-web-site-montreal-canada-april-page-cloud-based-subscription-services-181580460.jpg" alt="MS Apps"/>
+      <p class="offerp">Microsoft Apps</p>
+      <button class="checkout"><a href="Microsoft apps.html"><p>Check out</p></a></button>
+    </div>
+    <div class="offerdiv1" data-aos="slide-up">
+      <img class="image1" src="conformity-362194419.jpg" alt="UI/UX"/>
+      <p class="offerp">ALL</p>
+      <button class="checkout"><a href="#offer"><p>Check out</p></a></button>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" data-aos="fade-up">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <p>“I became a junior developer in just 3 months!”</p>
+        <h4>— Tolu A., Lagos</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>“The graphic design course changed my life!”</p>
+        <h4>— Mary K., Ibadan</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats" data-aos="fade-right">
+    <h2>Our Impact</h2>
+    <div class="stats-grid">
+      <div><h3>500+</h3><p>Graduates</p></div>
+      <div><h3>10+</h3><p>Expert Mentors</p></div>
+      <div><h3>95%</h3><p>Job Placement</p></div>
+    </div>
+  </section>
+
+  <!-- Floating Chat Button -->
+  <a href="https://wa.me/2348034407044" class="whatsapp-float" target="_blank">
+    <img src="whatsapp_icon-e1719666153212-65x65.png" alt="Chat on WhatsApp">
+  </a>
+  
+  <!-- Dark Mode Toggle -->
+  <button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+
+  <!-- Instructors Section -->
+  <section class="team" data-aos="fade-up">
+    <h2>Meet Our Instructors</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="great-website-black-guy-showing-260nw-2036934320.jpg" alt="Instructor">
+        <h4>Pius Victor (DEVIS)</h4>
+        <p>Senior Web Developer</p>
+      </div>
+      <div class="member">
+        <img src="happy-woman-using-laptop-holding-260nw-2489482901.jpg" alt="Instructor">
+        <h4>MJ</h4>
+        <p>Graphics Instructor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" data-aos="fade-up">
+    <h2>Student Projects</h2>
+    <div class="portfolio-grid">
+      <div><img class="Landing" src="website-template-websites-apps-260nw-1019269555.jpg" alt="Project 1"><p>Landing Page</p></div>
+      <div><img src="abstract-gradient-poster-background-vector-260nw-2467145181.jpg" alt="Project 2"><p>Business Card Design</p></div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" data-aos="fade-left">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Select a course</li>
+      <li>Fill the application form</li>
+      <li>Get approval within 24hrs</li>
+      <li>Start learning online</li>
+    </ol>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/2348034407044" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat">
+  </a>
+
+  <!-- Dark Mode Toggle -->
+  <button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+
+  <!-- AOS and JS Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const update = () => {
+        const target = +counter.getAttribute('data-target');
+        const value = +counter.innerText;
+        const speed = 200;
+        const step = Math.ceil(target / speed);
+        if (value < target) {
+          counter.innerText = value + step;
+          setTimeout(update, 10);
+        } else {
+          counter.innerText = target + (counter.innerText.includes('%') ? '%' : '');
+        }
+      };
+      update();
+    });
+  </script>
+  <!-- AOS and Swiper Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("show");
+    }
+  
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web development Form</title>
+  <link rel="icon" href="chrome-effect-logo-mockup_1016288-85.jpg" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+        url(web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546.jpg) no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; */
+    }
+
+    .firstdiv {
+      background-color:rgba(128, 128, 128, 0.719);
+      width: 90%;
+      margin-top: 100px;
+      max-width: 500px;
+      padding: 2rem;
+      border-bottom-left-radius: 100px;
+      border-top-right-radius: 100px;
+      animation: moveUpDown 3s infinite ease-in-out;
+      box-shadow: 00.10px 10px 29px blue;
+    }
+
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .car {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    .welcometxt {
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .innerdiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .transparent,
+    .transparent1 {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      margin: 0.4rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btndiv {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .log
+    {
+      width: 140px;
+      height: 45px;
+      margin: 0.4rem;
+      border-radius: 10px;
+      margin-left: 150px;
+      border: none;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    .log:hover
+     {
+      background-color: white;
+      color: black;
+    }
+
+    .log a
+    {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 45px;
+    }
+
+    .btndiv p {
+      color: white;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .btndiv a {
+      color: white;
+      text-decoration: underline;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 500px) {
+      .firstdiv {
+        padding: 1.5rem;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      .car {
+        height: 120px;
+        width: 120px;
+      }
+
+      .log,
+      .sign {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      .transparent,
+      .transparent1 {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="firstdiv">
+    <img class="car" src="chrome-effect-logo-mockup_1016288-85.jpg" alt="logo" />
+    <h1 class="welcometxt">WELCOME, PLS ENTER THE FOLLOWING INFORMATION</h1>
+    <div class="innerdiv">
+      <input class="transparent" type="text" placeholder="First Name" />
+      <input class="transparent1" type="text" placeholder="Last Name" />
+      <input class="transparent1" type="" placeholder="How many times a week for classes" />
+      <input class="transparent1" type="tel" placeholder="Phone Number" />
+    </div>
+   <button class="log">Submit</button>
+  </div>
+</body>
+</html>
