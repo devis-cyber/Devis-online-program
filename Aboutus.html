@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Devis Dev Online Programs 💻</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      background-color: #0a1d56;
+      padding: 15px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ===== SIDEBAR (Mobile Nav) ===== */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 220px;
+      height: 100%;
+      background-color: #0a1d56;
+      padding-top: 60px;
+      transition: 0.3s ease;
+      z-index: 999;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 15px 20px;
+      border-bottom: 1px solid #1d3557;
+      text-decoration: none;
+    }
+
+    .sidebar.show {
+      left: 0;
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about-section {
+      padding: 40px 20px;
+      background-color: #f1f5f9;
+    }
+
+    .about-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about-container h2 {
+      font-size: 2rem;
+      color: #0a1d56;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-container p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .about-container ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .about-container ul li {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+
+    .join-button {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .join-button:hover {
+      background-color: #128c7e;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-container h2 {
+        font-size: 1.5rem;
+      }
+
+      .about-container p,
+      .about-container ul li {
+        font-size: 1rem;
+      }
+
+      .join-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <div class="logo">Devis Dev 💻</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Aboutus.html">About</a>
+      <a href="#courses">Courses</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+  </header>
+
+  <!-- ===== SIDEBAR MENU ===== -->
+  <div class="sidebar" id="sidebar">
+    <a href="index.html">Home</a>
+    <a href="Aboutus.html">About</a>
+    <a href="#courses">Courses</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p>
+        <strong>Devis Dev Online Programs 💻</strong> is a virtual tech learning platform where beginners and young talents are trained in digital skills like web development, graphic design, and Microsoft tools.
+      </p>
+      <p>
+        We believe that everyone should have access to tech education — from home, with ease, and at an affordable price. Our goal is to make tech skills easy, practical, and fun.
+      </p>
+      <p>We offer:</p>
+      <ul>
+        <li>💻 Web Development (HTML, CSS)</li>
+        <li>🎨 Graphic Design</li>
+        <li>📊 Microsoft Office (Word, Excel, PowerPoint)</li>
+        <li>🧠 Tech Tips & Tools for Everyday Use</li>
+      </ul>
+      <p>
+        Join us today and start building your tech future — one skill at a time.
+      </p>
+      <a href="https://wa.me/2348034407044?text=Hello%20Devis%20Dev%2C%20I%20am%20interested%20in%20your%20online%20programs" target="_blank" class="join-button">💬 Join Us on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
