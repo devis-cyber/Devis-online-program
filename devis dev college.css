@@ -84,26 +84,36 @@ html, body {
   background-color: #f1f1f1;
   color: #f5a00c;
 }
+
+/* === SIDEBAR & MENU === */
 .menu-icon {
   display: none;
   font-size: 28px;
   color: #385272;
   cursor: pointer;
+  z-index: 10001;
 }
 
+/* Sidebar Base */
 .sidebar {
-  display: none;
-  flex-direction: column;
   position: fixed;
   top: 0;
-  right: -250px;
-  width: 250px;
+  right: 0;
   height: 100%;
-  background: white;
-  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  background: #fff;
   padding: 40px 20px;
-  transition: right 0.3s ease;
-  z-index: 10000;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  z-index: 10001;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .sidebar a {
@@ -111,7 +121,10 @@ html, body {
   color: #385272;
   font-size: 18px;
   margin: 15px 0;
-  display: block;
+  transition: color 0.3s ease;
+}
+.sidebar a:hover {
+  color: #f59e00;
 }
 
 .sidebar .close-btn {
@@ -119,6 +132,24 @@ html, body {
   text-align: right;
   cursor: pointer;
   margin-bottom: 20px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 10000;
+}
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Show hamburger icon on small screens */
@@ -129,18 +160,11 @@ html, body {
 
   .menu-icon {
     display: block;
-    margin-left: 290px;
-    margin-top:-40px ;
+    position: absolute;
+    right: 30px;
+    top: 20px;
   }
-
-  .sidebar.show {
-    display: flex;
-   right: 0;
-  }
-  
-  
 }
-
 
 /* === HERO SECTION === */
 .sbs1 {
@@ -357,12 +381,11 @@ html, body {
   object-fit: cover;
 }
 @media (max-width: 768px) {
-  .portfolio-grid{
+  .portfolio-grid {
     margin-left: -129px;
     width: 200px;
     display: flex;
   }
-  
 }
 
 /* === HOW IT WORKS === */
