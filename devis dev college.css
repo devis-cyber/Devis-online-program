@@ -356,6 +356,14 @@ html, body {
   border-radius: 8px;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .portfolio-grid{
+    margin-left: -129px;
+    width: 200px;
+    display: flex;
+  }
+  
+}
 
 /* === HOW IT WORKS === */
 .how-it-works {
