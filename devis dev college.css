@@ -451,6 +451,12 @@ html, body {
   background: #1e1e1e;
   color: white;
 }
+.member img {
+  width: 100px;
+  height: 100px; /* or auto */
+  object-fit: cover;
+}
+
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
@@ -481,6 +487,8 @@ html, body {
   }
   .member img {
     width: 100px;
-    height: 100px;
+    height: 100px; /* or auto */
+    object-fit: cover;
   }
+  
 }
